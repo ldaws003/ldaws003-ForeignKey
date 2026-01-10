@@ -1,5 +1,5 @@
 CREATE TABLE Post(
   id SERIAL PRIMARY KEY,
   post VARCHAR(255),
-  user_fk INT REFERENCES site_user(id);
+  user_fk INT FOREIGN KEY REFERENCES site_user(id)
 );
